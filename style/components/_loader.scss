@@ -45,14 +45,14 @@
             animation: item-2_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
           }
           &.item-3 {
-            background-color: $footerColor;
+            background-color: #ccc;
             bottom: 0;
             right: 0;
             z-index: 1;
             animation: item-3_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
           }
           &.item-4 {
-            background-color: $gray;
+            background-color: #DDD;
             bottom: 0;
             left: 0;
             animation: item-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;

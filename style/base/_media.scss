@@ -2,59 +2,53 @@
 @use '../abstracts/variables' as *;
 
 
-@media (max-width: 1000px) {
-    // Auth
-    .bg-auth{
-        @include flexItem(flex, center, center, column, initial);
-        .img-auth, img{
-            display: none;
+@media (max-width: 1200px) {
+    
+    // Used Classes In All
+
+    .flex-col{
+        flex-direction: column !important;
+    }
+
+    .none-mobile{
+        display: none !important;
+    }
+
+    .d-none{
+        display: block !important;
+    }
+
+    // Slider
+    .slider{
+        #sliderHome{
+            .item{
+                .bg-up{
+                    height: 800px;
+                }
+                .overlay-fix {
+                    align-items: center !important;
+                    padding: 0 !important;
+                    .container, .over-info{
+                        padding: 0 !important;
+                    }
+                }
+            }
+            .owl-nav {
+                display: none !important;
+            }
         }
     }
 
-    .row, .col-md-7, .w-75, .w-50, .date-input, .date-input input{
-        width: 100% !important;
-    }
 }
 
 @media (max-width: 990px) {
+    
+    // Used Classes In All
 
 }
 
 @media (max-width: 767px) {
-    .btn-fade-nav{
-        display: none;
-    }
-    .px-5{
-        padding-right: 10px !important;
-        padding-left: 10px !important;
-    }
-    .flex-col{
-        flex-direction: column;
-    }
-    // Style Main Body Home
-    .body-home{
-        // Head Poster
-        .head-poster{
-            height: 400px;
-            img{
-                height: 400px;
-            }
-            .info-head-poster{
-                max-width: 100%;
-                h1{
-                    font-size: 30px
-                }
-            }
-        }
-        // Join Us
-        .join-us{
-            img{
-                &:first-child{
-                    height: 350px;
-                }
-            }
-        }
-    }
+    
 }
 
 

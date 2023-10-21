@@ -1,5 +1,13 @@
-// Font Import Cdn
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap');
+// Font Import
+@font-face {
+    font-family: "JALI";
+    src: url("../../fonts/regular.ttf");
+}
+@font-face {
+    font-family: "JALI";
+    src: url("../../fonts/semiBold.ttf");
+    font-weight: bold;
+}
 
 // Mixin
 @import '../abstracts/mixins';
@@ -18,7 +26,9 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden !important;
-    font-family: 'Tajawal', sans-serif !important;
+    font-family: 'JALI', sans-serif !important;
+    background: linear-gradient(150deg, #3a3a3a 0%, #0f0f10 100%);
+    height: 100vh;
 }
 
 a, button, input, textarea, i{
@@ -43,30 +53,31 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 10px 0;
 }
 
+h1,h2,h3,h4,h5,h6,p,a,button,input,textarea{
+    letter-spacing: 1px;
+}
+
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li{
-    display: inline-block;
-}
-
 // Tools Form
 input{
-    border: 1px solid $colorBorderInput;
-    padding: 13px 20px;
-    border-radius: 10px;
-    background-color:rgba(255,255,255,0.2);
+    border: 1px solid $mainColor;
     color: $whiteColor;
+    background-color:transparent;
+    padding: 0 20px;
+    height: 55px;
+    border-radius: 5px;
 }
 
 textarea{
-    border: 1px solid $colorBorderInput;
+    border: 1px solid $mainColor;
     color: $whiteColor;
     padding: 13px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     min-height: 100px;
     resize: none;
 }
@@ -89,6 +100,10 @@ textarea{
 :-moz-placeholder {
     color: $whiteColor;
     opacity: 1;
+}
+
+.input-icon{
+    padding: 0px 40px !important;
 }
 
 .fix-icon-Input{
@@ -127,10 +142,6 @@ input[type=number] {
     color: $secondColor !important;
 }
 
-.colorGray{
-    color : $gray !important
-}
-
 // Bg Colors
 .bgColorMain{
     background-color: $mainColor !important;
@@ -140,10 +151,6 @@ input[type=number] {
     background-color: $secondColor !important;
 }
 
-.bgOpSecColor{
-    background-color: $secOpColor !important;
-}
-
 // Border Color
 .borderColorMain{
     border: 1px solid $mainColor !important;
@@ -151,10 +158,6 @@ input[type=number] {
 
 .borderSecondColor{
     border: 1px solid $secondColor !important;
-}
-
-.borderOpSecColor{
-    border: 1px solid $secOpColor !important;
 }
 
 .borColorMain{
@@ -174,9 +177,10 @@ button{
 }
   
 .btn-button{
-    height: 40px;
+    height: 50px;
     width: 160px;
     font-size: 14px;
+    border-radius: 5px;
     &:hover{
       transform: scale(0.9);
     }
@@ -188,24 +192,14 @@ button{
     height: 100%;
     width: 100%;
     z-index: 998;
-    background-color: rgba(0,0,0,0.6);              
+    background-color: rgba(0,0,0,0.3);              
 }
 
 .overlay-absolute{
     @include positionItem(absolute, 0, initial, 0, initial, initial);
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);              
-}
-
-table{
-    tbody, td, tfoot, th, thead, tr{
-        vertical-align: middle;
-        text-align: center;
-        border: 0;
-        border-bottom: 1px solid #DDD;
-        padding: 15px !important;
-    }
+    background-color: rgba(0,0,0,0.8);              
 }
 
 .back{
@@ -249,16 +243,6 @@ table{
     box-shadow: none !important
 }
 
-.btn-icon{
-    width: 35px;
-    height: 35px;
-}
-
-.btn-icon-big{
-    width: 65px;
-    height: 65px;
-}
-
 // Fonts Sizs
 
 .small-font-10{
@@ -278,7 +262,13 @@ table{
 }
 
 // Circle Icon BTN
-.icon-circle{
+
+.btn-icon{
     width: 35px;
     height: 35px;
+}
+
+.btn-icon-big{
+    width: 65px;
+    height: 65px;
 }

@@ -9,14 +9,10 @@ html[dir=ltr] {
         direction: ltr;
     }
 
-    // Style Main Board
-    .body-board{
-        .in-filter{
-            .search-in{
-                button{
-                    right: 15px;
-                }
-            }
+    // Style Box Search
+    .search-in{
+        button{
+            right: 15px;
         }
     }
 
@@ -27,6 +23,26 @@ html[dir=ltr] {
         }
     }
 
+    // Style Fix Icon Input
+    .fix-icon-Input{
+        left: 13px;
+    }
+
+    // Used Classes In All
+    .overlay-fixed{
+        transform: translateX(100%);
+        right: 0;      
+    }
+
+    // Owl SLider Direction content
+    .slider{
+        #sliderHome{
+            .item{
+                direction: ltr;
+            }
+        }
+    }
+
 
     // Media
     @media (max-width: 1200px) {
@@ -34,6 +50,15 @@ html[dir=ltr] {
         .nav-header{
             transform: translateX(-100%);  
             left: 0;
+            .links{
+                li{
+                    a{
+                        &::after{
+                            left: -15px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -48,14 +73,10 @@ html[dir=rtl] {
         direction: rtl;
     }
 
-    // Style Main Board
-    .body-board{
-        .in-filter{
-            .search-in{
-                button{
-                    left: 15px;
-                }
-            }
+    // Style Box Search
+    .search-in{
+        button{
+            left: 15px;
         }
     }
 
@@ -65,14 +86,43 @@ html[dir=rtl] {
             left: 20px;
         }
     }
+
+    // Style Fix Icon Input
+    .fix-icon-Input{
+        right: 13px;
+    }
+
+    // Used Classes In All
+    .overlay-fixed{
+        transform: translateX(-100%);
+        left: 0;
+    }
+
+    // Owl SLider Direction content
+    .slider{
+        #sliderHome{
+            .item{
+                direction: rtl;
+            }
+        }
+    }
     
 
     // Media
     @media (max-width: 1200px) {
         // Nav
         .nav-header{
-            transform: translateX(100%);  
-            right: 0; 
+            transform: translateX(100%);
+            right: 0;
+            .links{
+                li{
+                    a{
+                        &::after{
+                            right: -15px;
+                        }
+                    }
+                }
+            }
         }
     }
 

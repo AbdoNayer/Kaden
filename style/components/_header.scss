@@ -1,0 +1,137 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+// Style Header In Web
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    &.header-fixed{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        animation: slideDown 0.7s;
+    }
+    // Slide Down
+    @keyframes slideDown {
+        0%{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0%);   
+        }
+    }
+    .links{
+        li{
+            a{
+                &::after{
+                    content: "";
+                    @include positionItem(absolute, initial, -10px, 0, 0, initial);
+                    @include transition(0.5s);
+                    background-color: $whiteColor;
+                    width: 0%;
+                    height: 1px;
+                }
+                &:hover{
+                    color: $mainColor !important;
+                    &::after{
+                        width: 70%;
+                    }
+                }
+
+            }
+            &.active{
+                a{
+                    color: $mainColor !important;
+                    font-weight: bold;
+                    &::after{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Style Header In Mobile
+@media (max-width: 1200px) {
+    // Style Click Nav
+    .click-nav{
+        display: flex !important;
+        .closed {
+            &:nth-of-type(2) {
+                margin: -6px;
+            }
+        }
+    }
+
+    // Header
+    .header{
+        .logo{
+            img{
+                max-width: 100px;
+            }
+        }
+        .in-head-mobile {
+            width: 100%;
+        }
+        .nav-header{
+            @include positionItem(fixed, 0, initial, initial, initial, initial);
+            @include transition(0.5s);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            background-color: #272727;
+            z-index: 999;
+            width: 250px;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+            contain: size style layout;
+            flex-direction: column;
+            align-items: initial !important;
+            justify-content: space-between !important;
+            padding: 0;
+            .links{
+                flex-direction: column;
+                align-items: initial !important;
+                justify-content: initial !important;
+                li{
+                    display: block;
+                    margin: 20px 0;
+                    a{
+                        &::after{
+                            content: "";
+                            @include positionItem(absolute, 0, initial, initial, initial, initial);
+                            @include transition(0.5s);
+                            background-color: $whiteColor;
+                            width: 3px;
+                            height: 0%;
+                        }
+                        &:hover{
+                            color: $mainColor !important;
+                            &::after{
+                                height: 100%;
+                            }
+                        }
+
+                    }
+                    &.active{
+                        a{
+                            color: $mainColor !important;
+                            font-weight: bold;
+                            &::after{
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .last-control{
+                margin-top: 30px;
+                justify-content: center;
+            }
+        }
+    }
+}
