@@ -10,9 +10,17 @@ $(window).on('load', function () {
     });
     $("body").css("overflow-y", "auto");
 
+    // Animation Page
+    AOS.init();
+
 });
 
 $(document).ready(function () {
+
+    // Click Btn To Up Page
+    $(document).on("click", ".fix-up-btn",function() {
+        $('html,body').animate({ scrollTop: 0 }, 10);
+    });
 
     // Click Open Nav In Mobile
     $(document).on("click", ".click-nav, .overlay-fixed",function() {
@@ -24,6 +32,8 @@ $(document).ready(function () {
 
     // Scroll Fix Header
     $(window).scroll(function () {
+
+        // Fade Heade Animation
         if ($(window).width() > 767) {
             if($(this).scrollTop() > 30){
                 $('.header').addClass('header-fixed')
@@ -31,6 +41,10 @@ $(document).ready(function () {
                 $('.header').removeClass('header-fixed')
             }
         }
+
+        // Fade Btn To Click Up Page
+        ($(this).scrollTop() > 300) ? $('.fix-up-btn').removeClass('visible') : $('.fix-up-btn').addClass('visible');
+
     });
 
     // Upolad Files
@@ -40,11 +54,37 @@ $(document).ready(function () {
         $(this).prev('label').text(file);
     });
 
-    // Animation Page
-    AOS.init();
-
     // Slider Skills
     $('#sliderHome').owlCarousel({
+        loop:true,
+        margin:0,
+        center:true,
+        autoplay:true,
+        autoplayTimeout: 7000,
+        smartSpeed: 1000,
+        animateOut: 'fadeOut',
+        dragEndSpeed: 7000,
+        pagination : false,
+        nav:true,
+        navText: [
+            '<i class="icon-arr-l"></i>',
+            '<i class="icon-arr-r"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+
+    // Slider Skills
+    $('#sliderImages').owlCarousel({
         loop:true,
         margin:0,
         center:true,

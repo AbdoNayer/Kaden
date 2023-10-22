@@ -28,7 +28,6 @@ body {
     overflow-x: hidden !important;
     font-family: 'JALI', sans-serif !important;
     background: linear-gradient(150deg, #3a3a3a 0%, #0f0f10 100%);
-    height: 100vh;
 }
 
 a, button, input, textarea, i{
@@ -142,6 +141,10 @@ input[type=number] {
     color: $secondColor !important;
 }
 
+.oldMainColor{
+    color: $oldMainColor !important;
+}
+
 // Bg Colors
 .bgColorMain{
     background-color: $mainColor !important;
@@ -233,6 +236,10 @@ button{
     overflow-x: auto;
 }
 
+.over-x-hidden{
+    overflow-x: hidden;
+}
+
 .height-view-scroll{
     height: 500px;
     overflow-y: auto;
@@ -242,6 +249,11 @@ button{
     outline: none !important;
     box-shadow: none !important
 }
+
+.visible {
+    visibility: hidden;
+    opacity: 0;
+  }
 
 // Fonts Sizs
 
@@ -263,12 +275,17 @@ button{
 
 // Circle Icon BTN
 
-.btn-icon{
+.btn-icon-35{
     width: 35px;
     height: 35px;
 }
 
-.btn-icon-big{
+.btn-icon-45{
+    width: 45px;
+    height: 45px;
+}
+
+.btn-icon-65{
     width: 65px;
     height: 65px;
 }
