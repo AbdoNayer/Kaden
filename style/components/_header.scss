@@ -7,10 +7,16 @@
     top: 0;
     right: 0;
     z-index: 9999;
+    &.borOther{
+        border-bottom: 1px solid #585858;
+    }
     &.header-fixed{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         background-color: #3a3a3a;
         animation: slideDown 0.7s;
+    }
+    &.not-fix{
+        position: relative !important;
     }
     // Slide Down
     @keyframes slideDown {

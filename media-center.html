@@ -52,7 +52,7 @@
     <div class="overlay-fixed"></div>
     
     <!-- Header -->
-    <header class="py-4 header w-100">
+    <header class="py-4 header not-fix w-100 borOther">
         <div class="container">
             <div class="row align-items-center justify-content-between w-100">
                 <div class="col-md-3 col-xs-12 in-head-mobile d-flex align-items-center justify-content-between">
@@ -68,10 +68,10 @@
                 <div class="col-md-9 col-xs-12 d-flex align-items-center justify-content-end nav-header">
                     <div class="d-flex align-items-center flex-col">
                         <ul class="d-flex align-items-center links w-100">
-                            <li class="active"><a href="index.html" class="mx-3 text-white position-relative">الرئيسية</a></li>
+                            <li><a href="index.html" class="mx-3 text-white position-relative">الرئيسية</a></li>
                             <li><a href="about-us.html" class="mx-3 text-white position-relative">من نحن</a></li>
                             <li><a href="projects.html" class="mx-3 text-white position-relative">مشاريعنا</a></li>
-                            <li><a href="media-center.html" class="mx-3 text-white position-relative">المركز الاعلامي</a></li>
+                            <li class="active"><a href="media-center.html" class="mx-3 text-white position-relative">المركز الاعلامي</a></li>
                             <li><a href="teams.html" class="mx-3 text-white position-relative">فريقنا</a></li>
                             <li><a href="recruitment.html" class="mx-3 text-white position-relative">التوظيف</a></li>
                             <li><a href="call-us.html" class="mx-3 text-white position-relative">تواصل معنا</a></li>
@@ -97,241 +97,68 @@
 
     <!-- Main Body -->
     <div class="main-body body-home overflow-hidden">
-        
-        <!-- Head Slider -->
-        <div class="slider overflow-hidden">
-            <div id="sliderHome" class="owl-carousel owl-theme sliderHome">
-                <div class="item position-relative">
-                    <img src="./images/bg.png" alt="" class="w-100 bg-up">
-                    <div class="over-up w-100"></div>
-                    <div class="over-down w-100"></div>
-                    <div class="overlay-fix w-100 h-100 d-flex align-items-end pb-5">
-                        <div class="container overflow-hidden pb-5">
-                            <div class="over-info d-flex align-items-center justify-content-between flex-col pb-5">
-                                <div class="d-flex align-items-center right-in-view">
-                                    <div class="icon-title p-2 rounded-3 d-flex align-items-center justify-content-center">
-                                        <img src="./images/p-white.png" alt="">
-                                    </div>
-                                    <h2 class="text-white mx-3 fw-bold">
-                                        نبتكر الاختلاف، نُلهِمك التجربة، 
-                                        <br />
-                                        نُحقِّق الجودة
-                                        <br />
-                                        رؤية عصرية، فكر جديد
-                                    </h2>
-                                </div>
-                                <div class="left-in-view">
-                                    <h1 class="colorMain fw-bold m-0">01</h1>
-                                    <h5 class="text-white mb-4">
-                                        نبتكر الاختلاف، نُلهِمك التجربة، 
-                                        <br />
-                                        نُحقِّق الجودة
-                                        <br />
-                                        رؤية عصرية، فكر جديد
-                                    </h5>
-                                    <a href="" class="text-white d-flex align-items-center more-a position-relative mx-4">
-                                        <span class="fs-5 fw-bold position-relative">المزيد</span>
-                                        <i class="icon-arr-l mx-2 small-font-11 colorMain position-relative"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item position-relative">
-                    <img src="./images/p5.png" alt="" class="w-100 bg-up">
-                    <div class="over-up w-100"></div>
-                    <div class="over-down w-100"></div>
-                    <div class="overlay-fix w-100 h-100 d-flex align-items-end pb-5">
-                        <div class="container overflow-hidden pb-5">
-                            <div class="over-info d-flex align-items-center justify-content-between flex-col pb-5">
-                                <div class="d-flex align-items-center right-in-view">
-                                    <div class="icon-title p-2 rounded-3 d-flex align-items-center justify-content-center">
-                                        <img src="./images/p-white.png" alt="">
-                                    </div>
-                                    <h2 class="text-white mx-3 fw-bold">
-                                        نبتكر الاختلاف، نُلهِمك التجربة، 
-                                        <br />
-                                        نُحقِّق الجودة
-                                        <br />
-                                        رؤية عصرية، فكر جديد
-                                    </h2>
-                                </div>
-                                <div class="left-in-view">
-                                    <h1 class="colorMain fw-bold m-0">02</h1>
-                                    <h5 class="text-white mb-4">
-                                        نبتكر الاختلاف، نُلهِمك التجربة، 
-                                        <br />
-                                        نُحقِّق الجودة
-                                        <br />
-                                        رؤية عصرية، فكر جديد
-                                    </h5>
-                                    <a href="" class="text-white d-flex align-items-center more-a position-relative mx-4">
-                                        <span class="fs-5 fw-bold position-relative">المزيد</span>
-                                        <i class="icon-arr-l mx-2 small-font-11 colorMain position-relative"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- About US -->
-        <div class="about-us position-relative py-5">
-            <img src="./images/shape.png" class="shape-png none-mobile" alt="">
-            <img src="./images/old-shape.png" class="old-shape-png none-mobile" alt="">
-            <div class="container overflow-hidden position-relative py-3">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12 overflow-hidden">
-                        <div class="py-5 box-info-about" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
-                            <img src="./images/im.png" class="m-width-100" alt="">
-                            <div class="d-flex align-items-center my-4">
-                                <img src="./images/p-gray.png" alt="">
-                                <span class="text-white fs-4 mx-3">من نحن</span>
-                            </div>
-                            <p class="text-white">
-                                نؤسس في كادن طريقًا جديدًا للمضي بقطاع التطوير العقاري في 
-                                <br/>
-                                المملكة العربية السعودية. حيث نؤمن أنّ الأماكن الرائدة هي التي تعزز
-                                <br/>
-                                شغف الإنسان وتُثري
-                                <br/>
-                                تجربته الشخصية. كما نؤمن بإمكانية أن تتوافق الأماكن مع طموحات
-                                <br/>
-                                كل فرد وتمنحه أسلوبًا جديدًا للعمل والحياة.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12 d-flex overflow-hidden justify-content-center">
-                        <div class="list-info-about" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
-                            <div class="d-flex align-items-center my-4">
-                                <img src="./images/p-gray.png" alt="">
-                                <span class="text-white fs-2 mx-3">قيمنا</span>
-                            </div>
-                            <div class="">
-                                <div class="d-flex flex-col my-2">
-                                    <span class="oldMainColor fs-1">01</span>
-                                    <div class="px-2">
-                                        <p class="text-white">رؤية عصرية، فكر جديد</p>
-                                        <p class="text-white">
-                                            قيمنا ثابتة لا تتغير، وهي بمثابة نجمٍ نستدلّ به في جميع
-                                            <br/>
-                                            معاملاتنا وجميع المشاريع التي نتعهد بالعمل عليها.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-col my-2">
-                                    <span class="oldMainColor fs-1">02</span>
-                                    <div class="px-2">
-                                        <p class="text-white">رؤية عصرية، فكر جديد</p>
-                                        <p class="text-white">
-                                            قيمنا ثابتة لا تتغير، وهي بمثابة نجمٍ نستدلّ به في جميع
-                                            <br/>
-                                            معاملاتنا وجميع المشاريع التي نتعهد بالعمل عليها.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-col my-2">
-                                    <span class="oldMainColor fs-1">03</span>
-                                    <div class="px-2">
-                                        <p class="text-white">رؤية عصرية، فكر جديد</p>
-                                        <p class="text-white">
-                                            قيمنا ثابتة لا تتغير، وهي بمثابة نجمٍ نستدلّ به في جميع
-                                            <br/>
-                                            معاملاتنا وجميع المشاريع التي نتعهد بالعمل عليها.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-col my-2">
-                                    <span class="oldMainColor fs-1">04</span>
-                                    <div class="px-2">
-                                        <p class="text-white">رؤية عصرية، فكر جديد</p>
-                                        <p class="text-white">
-                                            قيمنا ثابتة لا تتغير، وهي بمثابة نجمٍ نستدلّ به في جميع
-                                            <br/>
-                                            معاملاتنا وجميع المشاريع التي نتعهد بالعمل عليها.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Projects -->
-        <div class="projects position-relative py-5 overflow-hidden">
+        <!-- Bread Crumb -->
+        <div class="bread-crumb my-4">
             <div class="container">
-                <div class="d-flex align-items-center justify-content-between flex-col">
-                    <div class="">
-                        <h2 class="colorMain title-sec position-relative">مشاريعنا</h2>
-                        <p class="text-white">يوجد العديد من المشاريع التي قمنا بتنفيذها بجودة عالية واحترافية</p>
-                    </div>
-                    <div class="">
-                        <a href="" class="text-white d-flex align-items-center more-a position-relative mx-4">
-                            <span class="fs-5 fw-bold mx-4 px-2 position-relative">المزيد</span>
-                            <i class="icon-arr-l small-font-13 text-white position-relative"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="row my-4">
-                    <div class="col-md-4 col-xs-12 overflow-hidden">
-                        <div class="box-project overflow-hidden my-3" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                            <div class="position-relative rounded-3 overflow-hidden">
-                                <img src="./images/01.png" class="w-100" alt="">
-                                <a href="" class="p-4 w-100 position-absolute bottom-0 start-0 d-flex align-items-center justify-content-between">
-                                    <p class="text-white m-0">واجهة الرياض - منطقة التسوق</p>
-                                    <i class="icon-arr-l text-white small-font-11"></i>
-                                </a>
+                <ul class="d-flex align-items-center">
+                    <li><a href="">الرئيسية</a></li>
+                    <li><a href="">المركز الاعلامي</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slider Media -->
+        <div class="slider-media py-2">
+            <div class="container">
+                <div class="slider overflow-hidden">
+                    <div id="sliderMedia" class="owl-carousel owl-theme sliderMedia">
+                        <div class="item position-relative">
+                            <img src="./images/bg-media.png" alt="" class="w-100 bg-up">
+                            <div class="over-info-new p-5 w-100 h-100 d-flex flex-column justify-content-end">
+                                <div class="mx-txt position-relative">
+                                    <div class="position-relative">
+                                        <span class="text-white">تفاصيل الخبر</span>
+                                        <h4 class="text-white">توقيع اتفاقية إدارة الممتلكات بين شركتي كادن وروشن لتستمر كادن بإدارة وتشغيل واجهة الرياض</h4>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="text-white">عصرٌ آخر للأعمال اللوجستية، بحلول عالمية لقطاع الخدمات اللوجستية</p>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 overflow-hidden">
-                        <div class="box-project overflow-hidden my-3" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="450">
-                            <div class="position-relative rounded-3 overflow-hidden">
-                                <img src="./images/02.png" class="w-100" alt="">
-                                <a href="" class="p-4 w-100 position-absolute bottom-0 start-0 d-flex align-items-center justify-content-between">
-                                    <p class="text-white m-0">واجهة الرياض - منطقة التسوق</p>
-                                    <i class="icon-arr-l text-white small-font-11"></i>
-                                </a>
+                        <div class="item position-relative">
+                            <img src="./images/bg-news.png" alt="" class="w-100 bg-up">
+                            <div class="over-info-new p-5 w-100 h-100 d-flex flex-column justify-content-end">
+                                <div class="mx-txt position-relative">
+                                    <div class="position-relative overflow-hidden">
+                                        <span class="text-white">تفاصيل الخبر</span>
+                                        <h4 class="text-white">توقيع اتفاقية إدارة الممتلكات بين شركتي كادن وروشن لتستمر كادن بإدارة وتشغيل واجهة الرياض</h4>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="text-white">عصرٌ آخر للأعمال اللوجستية، بحلول عالمية لقطاع الخدمات اللوجستية</p>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 overflow-hidden">
-                        <div class="box-project overflow-hidden my-3" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                            <div class="position-relative rounded-3 overflow-hidden">
-                                <img src="./images/03.png" class="w-100" alt="">
-                                <a href="" class="p-4 w-100 position-absolute bottom-0 start-0 d-flex align-items-center justify-content-between">
-                                    <p class="text-white m-0">واجهة الرياض - منطقة التسوق</p>
-                                    <i class="icon-arr-l text-white small-font-11"></i>
-                                </a>
+                        <div class="item position-relative">
+                            <img src="./images/bg.png" alt="" class="w-100 bg-up">
+                            <div class="over-info-new p-5 w-100 h-100 d-flex flex-column justify-content-end">
+                                <div class="mx-txt position-relative">
+                                    <div class="position-relative">
+                                        <span class="text-white">تفاصيل الخبر</span>
+                                        <h4 class="text-white">توقيع اتفاقية إدارة الممتلكات بين شركتي كادن وروشن لتستمر كادن بإدارة وتشغيل واجهة الرياض</h4>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="text-white">عصرٌ آخر للأعمال اللوجستية، بحلول عالمية لقطاع الخدمات اللوجستية</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- News -->
-        <div class="news position-relative py-5 mt-5">
-            <img src="./images/mask.png" class="mask-shape" alt="">
-            <div class="over-down w-100 h-100"></div>
-            <div class="container position-relative">
-                <div class="row">
+        <!-- Media News -->
+        <div class="news media-news py-4 position-relative">
+            <div class="container">
+                <div class="my-2">
+                    <h4 class="colorMain title-sec position-relative mt-0">أحدث الاخبار في شركة كادن للاستثمار</h4>
+                </div>
+                <div class="row mb-5">
                     <div class="col-md-8 col-xs-12">
-                        <div class="head-title-news">
-                            <div class="d-flex align-items-center">
-                                <h2 class="colorMain m-0">احدث الاخبار</h2>
-                                <h2 class="text-white m-0 mx-3">في شركة كادن</h2>
-                            </div>
-                            <p class="text-white">نبتكر الاختلاف ، نلهمك  التجربة ، نحقق الجودة رؤية عصرية ، فكر جديد</p>
-                        </div>
                         <div class="row my-3">
                             <div class="col-md-6 col-xs-12 overflow-hidden">
                                 <div class="position-relative overflow-hidden rounded-3 block-new my-3" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
@@ -381,6 +208,54 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 col-xs-12 overflow-hidden">
+                                <div class="position-relative overflow-hidden rounded-3 block-new my-3" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                                    <img src="./images/p2.png" class="w-100" alt="">
+                                    <div class="over-info-new p-3">
+                                        <span class="text-white">أبريل 03 / 2023</span>
+                                        <div class="d-flex align-items-center justify-content-between my-3 position-relative">
+                                            <h5 class="m-0 text-white position-relative">توقيع اتفاقية إدارة الممتلكات بين شركتي كادن وروشن </h5>
+                                            <a href="details-new.html"><i class="icon-arr-l text-white small-font-11"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 overflow-hidden">
+                                <div class="position-relative overflow-hidden rounded-3 block-new my-3" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="450">
+                                    <img src="./images/p1.png" class="w-100" alt="">
+                                    <div class="over-info-new p-3">
+                                        <span class="text-white">أبريل 03 / 2023</span>
+                                        <div class="d-flex align-items-center justify-content-between my-3 position-relative">
+                                            <h5 class="m-0 text-white position-relative">توقيع اتفاقية إدارة الممتلكات بين شركتي كادن وروشن </h5>
+                                            <a href="details-new.html"><i class="icon-arr-l text-white small-font-11"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 overflow-hidden">
+                                <div class="position-relative overflow-hidden rounded-3 block-new my-3" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                                    <img src="./images/p2.png" class="w-100" alt="">
+                                    <div class="over-info-new p-3">
+                                        <span class="text-white">أبريل 03 / 2023</span>
+                                        <div class="d-flex align-items-center justify-content-between my-3 position-relative">
+                                            <h5 class="m-0 text-white position-relative">توقيع اتفاقية إدارة الممتلكات بين شركتي كادن وروشن </h5>
+                                            <a href="details-new.html"><i class="icon-arr-l text-white small-font-11"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 overflow-hidden">
+                                <div class="position-relative overflow-hidden rounded-3 block-new my-3" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="450">
+                                    <img src="./images/p1.png" class="w-100" alt="">
+                                    <div class="over-info-new p-3">
+                                        <span class="text-white">أبريل 03 / 2023</span>
+                                        <div class="d-flex align-items-center justify-content-between my-3 position-relative">
+                                            <h5 class="m-0 text-white position-relative">توقيع اتفاقية إدارة الممتلكات بين شركتي كادن وروشن </h5>
+                                            <a href="details-new.html"><i class="icon-arr-l text-white small-font-11"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <a href="" class="text-center my-4">
                                 <span class="text-white">مشاهدة الكل</span>
                                 <i class="icon-arr-d colorMain mx-2"></i>
@@ -389,7 +264,7 @@
                     </div>
                     <div class="col-md-4 col-xs-12 overflow-hidden">
                         <div class="overflow-hidden rounded-3 mb-4 mt-5" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                            <h4 class="m-0 p-3 bgColorMain text-dark">اقرا ايضاً</h4>
+                            <h4 class="m-0 p-3 bgColorMain text-dark text-center">اقرا ايضاً</h4>
                             <div class="box-more-news p-3">
                                 <div class="my-4 block-more-new d-flex align-items-center">
                                     <div class="img-new overflow-hidden rounded-3">
@@ -448,49 +323,27 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="overflow-hidden rounded-3 mb-4 mt-5" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
+                            <div class="box-more-news-slider">
+                                <h4 class="m-0 pt-3 pb-2 text-white text-center">فعاليات</h4>
+                                <div class="slide-in-more-image-news">
+                                    <div id="sliderMedia" class="owl-carousel owl-theme sliderMedia">
+                                        <div class="item position-relative">
+                                            <img src="./images/bg-media.png" alt="" class="w-100 mt-3">
+                                            <img src="./images/bg-media.png" alt="" class="w-100 mt-3">
+                                        </div>
+                                        <div class="item position-relative">
+                                            <img src="./images/bg.png" alt="" class="w-100 mt-3">
+                                            <img src="./images/bg-news.png" alt="" class="w-100 mt-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Images -->
-        <div class="images py-5 overflow-hidden position-relative">
-            <img src="./images/right.png" class="img-block-images right-img none-mobile" alt="">
-            <img src="./images/left.png" class="img-block-images left-img none-mobile" alt="">
-            <div class="container py-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold colorMain mb-3 mt-0">فعاليات في صور</h2>
-                    <h5 class="text-white">فعاليات ومشاريع شركة كادن في صورة</h5>
-                </div>
-                <div id="sliderImages" class="owl-carousel owl-theme sliderImages py-5">
-                    <div class="item">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
     </div>
 

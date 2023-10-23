@@ -171,6 +171,10 @@ input[type=number] {
     border-color: $secondColor !important;
 }
 
+.borOldMainColor{
+    border-color: $oldMainColor !important;
+}
+
 // Class Important
 
 button{
@@ -253,7 +257,11 @@ button{
 .visible {
     visibility: hidden;
     opacity: 0;
-  }
+}
+
+.line-height-txt{
+    line-height: 35px;
+}
 
 // Fonts Sizs
 

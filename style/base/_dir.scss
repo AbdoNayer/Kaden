@@ -28,6 +28,43 @@ html[dir=ltr] {
         left: 13px;
     }
 
+    // Bread Crumb
+    .bread-crumb{
+        ul{
+            li{
+                a{
+                    &::after{
+                        right: -28px;
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    // Section Recruitment
+    .section-recruitment{
+        .box-recruitment{
+            a{
+                right: 0;
+            }
+        }
+    }
+
+    // Slider Media
+    .slider-media{
+        #sliderMedia{
+            .over-info-new{
+                direction: ltr;
+                .mx-txt{
+                    &::after{
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
     // Used Classes In All
     .overlay-fixed{
         transform: translateX(100%);
@@ -60,7 +97,7 @@ html[dir=ltr] {
     // Title Section
     .title-sec{
         &::after{
-            left: 140px;
+            right: -65px;
         }
     }
 
@@ -136,6 +173,42 @@ html[dir=rtl] {
         right: 13px;
     }
 
+    // Bread Crumb
+    .bread-crumb{
+        ul{
+            li{
+                a{
+                    &::after{
+                        left: -28px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section Recruitment
+    .section-recruitment{
+        .box-recruitment{
+            a{
+                left: 0;
+            }
+        }
+    }
+
+    // Slider Media
+    .slider-media{
+        #sliderMedia{
+            .over-info-new{
+                direction: rtl;
+                .mx-txt{
+                    &::after{
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
     // Used Classes In All
     .overlay-fixed{
         transform: translateX(-100%);
@@ -168,7 +241,7 @@ html[dir=rtl] {
     // Title Section
     .title-sec{
         &::after{
-            right: 140px;
+            left: -65px;
         }
     }
 

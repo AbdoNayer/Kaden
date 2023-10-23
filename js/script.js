@@ -54,7 +54,7 @@ $(document).ready(function () {
         $(this).prev('label').text(file);
     });
 
-    // Slider Skills
+    // Slider Home
     $('#sliderHome').owlCarousel({
         loop:true,
         margin:0,
@@ -83,8 +83,37 @@ $(document).ready(function () {
         }
     });
 
-    // Slider Skills
+    // Slider Images
     $('#sliderImages').owlCarousel({
+        loop:true,
+        margin:0,
+        center:true,
+        autoplay:true,
+        autoplayTimeout: 7000,
+        smartSpeed: 1000,
+        animateOut: 'fadeOut',
+        dragEndSpeed: 7000,
+        pagination : false,
+        nav:true,
+        navText: [
+            '<i class="icon-arr-l"></i>',
+            '<i class="icon-arr-r"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+
+    // Slider Media
+    $('.sliderMedia').owlCarousel({
         loop:true,
         margin:0,
         center:true,
