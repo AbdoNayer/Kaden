@@ -154,6 +154,10 @@ input[type=number] {
     background-color: $secondColor !important;
 }
 
+.bgOpSecondColor{
+    background-color: $opSecondColor !important;
+}
+
 // Border Color
 .borderColorMain{
     border: 1px solid $mainColor !important;
@@ -261,6 +265,10 @@ button{
 
 .line-height-txt{
     line-height: 35px;
+}
+
+.borderRad-13{
+    border-radius: 13px !important;
 }
 
 // Fonts Sizs

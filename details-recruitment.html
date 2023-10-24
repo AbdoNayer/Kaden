@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Title Page -->
+    <title>Kaden</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/Logo-Roads.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- CSS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS OwlCarousel 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/main.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="./icons/icons.css">
+
+
+</head>
+<body class="position-relative">
+
+    <!-- Loading App -->
+    <div class="loader w-100 h-100">
+        <div class="spinner">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+        </div>
+    </div>
+
+    <!-- Fix Btn Top -->
+    <button class="fix-up-btn visible btn-icon-45 rounded-3 bgColorMain d-flex align-items-center justify-content-center">
+        <i class="icon-chevron-up text-white fs-3"></i>
+    </button>
+
+    <!-- OverLay Fixed -->
+    <div class="overlay-fixed"></div>
+    
+    <!-- Header -->
+    <header class="py-4 header not-fix w-100 borOther">
+        <div class="container">
+            <div class="row align-items-center justify-content-between w-100">
+                <div class="col-md-3 col-xs-12 in-head-mobile d-flex align-items-center justify-content-between">
+                    <a href="" class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <div class="click-nav">
+                        <div class='handle'></div>
+                        <div class='handle'></div>
+                        <div class='handle'></div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-xs-12 d-flex align-items-center justify-content-end nav-header">
+                    <div class="d-flex align-items-center flex-col">
+                        <ul class="d-flex align-items-center links w-100">
+                            <li><a href="index.html" class="mx-3 text-white position-relative">الرئيسية</a></li>
+                            <li><a href="about-us.html" class="mx-3 text-white position-relative">من نحن</a></li>
+                            <li><a href="projects.html" class="mx-3 text-white position-relative">مشاريعنا</a></li>
+                            <li class="active"><a href="media-center.html" class="mx-3 text-white position-relative">المركز الاعلامي</a></li>
+                            <li><a href="teams.html" class="mx-3 text-white position-relative">فريقنا</a></li>
+                            <li><a href="recruitment.html" class="mx-3 text-white position-relative">التوظيف</a></li>
+                            <li><a href="call-us.html" class="mx-3 text-white position-relative">تواصل معنا</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center last-control">
+                            <a class="mx-3 text-white" href="#">AR</a>
+                            <a class="mx-3 text-white" href="search.html"><i class="icon-search"></i></a>
+                        </div>
+                    </div>
+                    <!-- Social In Menu Mobile -->
+                    <div class="link-social d-none border-top py-3">
+                        <ul class="d-flex align-items-center justify-content-center">
+                            <li class="facebook"><a href="" class="d-flex align-items-center justify-content-center rounded-3"><i class="icon-facebook text-white"></i></a></li>
+                            <li class="twitter"><a href="" class="d-flex align-items-center justify-content-center rounded-3"><i class="icon-twitter text-white"></i></a></li>
+                            <li class="instgram"><a href="" class="d-flex align-items-center justify-content-center rounded-3"><i class="icon-instagram text-white"></i></a></li>
+                            <li class="linkedin"><a href="" class="d-flex align-items-center justify-content-center rounded-3"><i class="icon-linkedin text-white"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Body -->
+    <div class="main-body body-home overflow-hidden">
+
+        <!-- Bread Crumb -->
+        <div class="bread-crumb my-4">
+            <div class="container">
+                <ul class="d-flex align-items-center">
+                    <li><a href="">الرئيسية</a></li>
+                    <li><a href="">التوظيف</a></li>
+                    <li><a href="">تفاصيل الوظيفة</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Details Media News -->
+        <div class="slider-media-news py-2">
+            <div class="container">
+
+                <div class="item-head-details position-relative">
+                    <img src="./images/bg-media.png" alt="" class="w-100 bg-up">
+                    <div class="over-info-new p-5 w-100 h-100 d-flex flex-column justify-content-end">
+                        <div class="mx-txt position-relative">
+                            <div class="position-relative">
+                                <span class="text-white">عنوان الوظيفة</span>
+                                <h4 class="text-white">ممثل مركز تواصل</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-work py-4">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 overflow-hidden">
+                            <div class="block-item-work bgOpSecondColor rounded-3 my-3 p-3 d-flex align-items-center" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
+                                <div class="btn-icon-45 borderRad-13 bgColorMain d-flex align-items-center justify-content-center">
+                                    <i class="icon-man-lap fs-5 text-white"></i>
+                                </div>
+                                <div class="px-3">
+                                    <h6 class="text-white mt-0">جهة العمل</h6>
+                                    <span class="text-white small-font-13">كادن</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 overflow-hidden">
+                            <div class="block-item-work bgOpSecondColor rounded-3 my-3 p-3 d-flex align-items-center" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="350">
+                                <div class="btn-icon-45 borderRad-13 bgColorMain d-flex align-items-center justify-content-center">
+                                    <i class="icon-users fs-5 text-white"></i>
+                                </div>
+                                <div class="px-3">
+                                    <h6 class="text-white mt-0">الفئة</h6>
+                                    <span class="text-white small-font-13">عام</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 overflow-hidden">
+                            <div class="block-item-work bgOpSecondColor rounded-3 my-3 p-3 d-flex align-items-center" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                                <div class="btn-icon-45 borderRad-13 bgColorMain d-flex align-items-center justify-content-center">
+                                    <i class="icon-bage fs-5 text-white"></i>
+                                </div>
+                                <div class="px-3">
+                                    <h6 class="text-white mt-0">نوع الوظيفة</h6>
+                                    <span class="text-white small-font-13">دوام كامل</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 overflow-hidden">
+                            <div class="block-item-work bgOpSecondColor rounded-3 my-3 p-3 d-flex align-items-center" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="450">
+                                <div class="btn-icon-45 borderRad-13 bgColorMain d-flex align-items-center justify-content-center">
+                                    <i class="icon-map fs-5 text-white"></i>
+                                </div>
+                                <div class="px-3">
+                                    <h6 class="text-white mt-0">الموقع</h6>
+                                    <span class="text-white small-font-13">واجهة الرياض</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4">
+
+                    <div class="container my-2">
+                        <h4 class="colorMain title-sec position-relative mt-0">مهام العمل</h4>
+                    </div>
+
+                    <div class="p-2">
+
+                        <div class="d-flex align-items-center my-4">
+                            <div class="btn-icon-45 borderRad-13 bgOpSecondColor d-flex align-items-center justify-content-center">
+                                <span class="fs-5 colorMain">01</span>
+                            </div>
+                            <h6 class="text-white m-0 mx-3">كتابة التقارير</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center my-4">
+                            <div class="btn-icon-45 borderRad-13 bgOpSecondColor d-flex align-items-center justify-content-center">
+                                <span class="fs-5 colorMain">02</span>
+                            </div>
+                            <h6 class="text-white m-0 mx-3">اللباقة في التحدث</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="my-4">
+
+                    <div class="container my-2">
+                        <h4 class="colorMain title-sec position-relative mt-0">المؤهلات المطلوبة</h4>
+                    </div>
+
+                    <div class="p-2">
+
+                        <div class="d-flex align-items-center my-4">
+                            <div class="btn-icon-45 borderRad-13 bgOpSecondColor d-flex align-items-center justify-content-center">
+                                <span class="fs-5 colorMain">01</span>
+                            </div>
+                            <h6 class="text-white m-0 mx-3">إجادة اللغة الإنجليزية تحدثاً وكتابة.</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center my-4">
+                            <div class="btn-icon-45 borderRad-13 bgOpSecondColor d-flex align-items-center justify-content-center">
+                                <span class="fs-5 colorMain">02</span>
+                            </div>
+                            <h6 class="text-white m-0 mx-3"> ثانوي.</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center my-4">
+                            <div class="btn-icon-45 borderRad-13 bgOpSecondColor d-flex align-items-center justify-content-center">
+                                <span class="fs-5 colorMain">03</span>
+                            </div>
+                            <h6 class="text-white m-0 mx-3">بكالوريوس</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="btn-button w-50 bgColorMain m-auto d-table my-5 text-white fs-5">تقديم طلب</button>
+
+
+            </div>
+        </div>
+
+        <!-- Form Job Application -->
+        <div class="w-75 bgOpSecondColor form-job-app h-100">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between border-bottom p-4">
+                    <h6 class="m-0 text-white">تعبئة طلب التقديم لوظيفة</h6>
+                    <button class="btn-icon-45 border borderRad-13"><i class="icon-arr-r text-white small-font-13"></i></button>
+                </div>
+
+                <div class="p-4">
+                    <h6 class="text-white">الوظيفة المحدد</h6>
+                    <div class="block-item-work rounded-3 my-3 d-flex align-items-center">
+                        <div class="btn-icon-65 borderRad-13 bgColorMain d-flex align-items-center justify-content-center overflow-hidden">
+                            <img src="./images/bg-media.png" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="px-3">
+                            <h6 class="text-white mt-0">جهة العمل</h6>
+                            <span class="text-white small-font-13">كادن</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="px-4">
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="my-3">
+                                <label for="" class="text-white mb-2">الاسم بالكامل</label>
+                                <div class="position-relative input-val">
+                                    <i class="icon-user-b fix-icon-Input colorMain"></i>
+                                    <input type="text" class="input-icon w-100" placeholder="محمد الجربوع">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="my-3">
+                                <label for="" class="text-white mb-2">الرقم الوطني</label>
+                                <div class="position-relative input-val">
+                                    <i class="icon-user-b fix-icon-Input colorMain"></i>
+                                    <input type="text" class="input-icon w-100" placeholder="000000000000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="my-3">
+                                <label for="" class="text-white mb-2">رقم الجوال</label>
+                                <div class="position-relative input-val">
+                                    <i class="icon-user-b fix-icon-Input colorMain"></i>
+                                    <input type="tel" class="input-icon w-100" placeholder="04565646546">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="my-3">
+                                <label for="" class="text-white mb-2">الجنس</label>
+                                <div class="position-relative select-in">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="">ذكر</option>
+                                        <option value="">أنثي</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="my-3">
+                                <label for="" class="text-white mb-2">تاريخ الميلاد</label>
+                                <div class="position-relative input-val data-val">
+                                    <input type="date" class="w-100" value="2013-01-08" placeholder="12-1-2023">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="my-3">
+                                <label for="" class="text-white mb-2">المؤهل العلمي</label>
+                                <div class="position-relative select-in">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="">بكالوريس</option>
+                                        <option value="">بكالوريس</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="my-3">
+                                <label for="" class="text-white mb-2">التخصص</label>
+                                <div class="position-relative input-val">
+                                    <input type="text" class="w-100" placeholder="انظمة معلومات">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="my-3">
+                                <label for="" class="text-white mb-2">المدينه</label>
+                                <div class="position-relative select-in">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="">الرياض</option>
+                                        <option value="">الرياض</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="pt-5 position-relative">
+        <div class="overlay-absolute"></div>
+        <div class="container position-relative py-5">
+            <div class="form-email text-center" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
+                <h4 class="text-white">ابق على اتصال</h4>
+                <p class="text-white my-4">تابع قنواتنا الاجتماعية واشترك في النشرة الإخبارية للحصول على آخر التحديثات.</p>
+                <form action="" class="d-flex align-items-center justify-content-center flex-col py-3">
+                    <div class="input-val position-relative">
+                        <input type="text" placeholder="info@selsela.net" class="input-icon">
+                        <i class="icon-envelope fix-icon-Input colorMain"></i>
+                    </div>
+                    <button class="btn-button bgColorMain text-white m-3 fw-bold">اشتراك</button>
+                </form>
+            </div>
+        </div>
+        <div class="end-footer mt-5 position-relative py-4">
+            <div class="container py-5">
+                <div class="d-flex align-items-center justify-content-between flex-col">
+                    <div class="none-mobile">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="">
+                        <ul class="d-flex align-items-center none-mobile">
+                            <li class="active"><a href="index.html" class="mx-3 text-white">الرئيسية</a></li>
+                            <li><a href="about-us.html" class="mx-3 text-white">من نحن</a></li>
+                            <li><a href="projects.html" class="mx-3 text-white">مشاريعنا</a></li>
+                            <li><a href="media-center.html" class="mx-3 text-white">المركز الاعلامي</a></li>
+                            <li><a href="teams.html" class="mx-3 text-white">فريقنا</a></li>
+                            <li><a href="recruitment.html" class="mx-3 text-white">التوظيف</a></li>
+                            <li><a href="call-us.html" class="mx-3 text-white">تواصل معنا</a></li>
+                        </ul>
+                        <p class="text-white m-0 text-center mt-3">جميع الحقوق محفوظة 2023 © كادن</p>
+                    </div>
+                    <!-- Social In Web -->
+                    <div class="link-social none-mobile">
+                        <ul class="d-flex align-items-center">
+                            <li class="facebook"><a href="" class="d-flex align-items-center justify-content-center rounded-3"><i class="icon-facebook text-white"></i></a></li>
+                            <li class="twitter"><a href="" class="d-flex align-items-center justify-content-center rounded-3"><i class="icon-twitter text-white"></i></a></li>
+                            <li class="instgram"><a href="" class="d-flex align-items-center justify-content-center rounded-3"><i class="icon-instagram text-white"></i></a></li>
+                            <li class="linkedin"><a href="" class="d-flex align-items-center justify-content-center rounded-3"><i class="icon-linkedin text-white"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Plugin Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Plugin Animation Page -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Plugin OwlCarousel 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Plugin Text Animation -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

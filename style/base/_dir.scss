@@ -28,6 +28,21 @@ html[dir=ltr] {
         left: 13px;
     }
 
+    // Form Job Application
+    .form-job-app{
+        left: 0;
+        form{
+            .data-val{
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                    right: 20px;
+                }
+                &::after{
+                    right: 20px;
+                }
+            }
+        }
+    }
+
     // Bread Crumb
     .bread-crumb{
         ul{
@@ -171,6 +186,24 @@ html[dir=rtl] {
     // Style Fix Icon Input
     .fix-icon-Input{
         right: 13px;
+    }
+
+    // Form Job Application
+    .form-job-app{
+        right: 0;
+        form{
+            .data-val{
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                    left: 20px;
+                }
+                input[type="date"] {
+                    text-align-last: right;
+                }
+                &::after{
+                    left: 20px;
+                }
+            }
+        }
     }
 
     // Bread Crumb

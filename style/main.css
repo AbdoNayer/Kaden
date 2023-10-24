@@ -525,6 +525,10 @@ input[type=number] {
   background-color: #0f0f10 !important;
 }
 
+.bgOpSecondColor {
+  background-color: #2e2e2e !important;
+}
+
 .borderColorMain {
   border: 1px solid #D5B978 !important;
 }
@@ -644,6 +648,10 @@ button {
 
 .line-height-txt {
   line-height: 35px;
+}
+
+.borderRad-13 {
+  border-radius: 13px !important;
 }
 
 .small-font-10 {
@@ -1479,6 +1487,74 @@ button {
   height: 380px;
 }
 
+.form-job-app {
+  position: fixed;
+  top: 0;
+  bottom: initial;
+  right: initial;
+  left: initial;
+  transform: initial;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+  contain: size style layout;
+  z-index: 999;
+}
+.form-job-app form .input-val, .form-job-app form .select-in {
+  opacity: 50%;
+}
+.form-job-app form .data-val input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 50%;
+  bottom: initial;
+  right: initial;
+  left: initial;
+  transform: translateY(-50%);
+  margin: auto;
+  opacity: 0;
+  z-index: 9;
+}
+.form-job-app form .data-val::after {
+  content: "\e901";
+  font-family: "icomoon";
+  position: absolute;
+  top: 50%;
+  bottom: initial;
+  right: initial;
+  left: initial;
+  transform: translateY(-50%);
+  margin: auto;
+  color: #D5B978;
+}
+
+.select-in::after {
+  content: "\e90d";
+  font-family: "icomoon";
+  position: absolute;
+  top: 50%;
+  bottom: initial;
+  right: initial;
+  left: initial;
+  transform: translateY(-50%);
+  margin: auto;
+  color: #D5B978;
+}
+.select-in .form-select {
+  border: 1px solid #D5B978;
+  color: #D5B978;
+  background-color: transparent;
+  padding: 0 20px;
+  height: 55px;
+  border-radius: 5px;
+}
+.select-in .form-select:focus {
+  border-color: #ced4da;
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+}
+
 @media (max-width: 1200px) {
   .flex-col {
     flex-direction: column !important;
@@ -1532,6 +1608,15 @@ html[dir=ltr] .select-in::after {
 }
 html[dir=ltr] .fix-icon-Input {
   left: 13px;
+}
+html[dir=ltr] .form-job-app {
+  left: 0;
+}
+html[dir=ltr] .form-job-app form .data-val input[type=date]::-webkit-calendar-picker-indicator {
+  right: 20px;
+}
+html[dir=ltr] .form-job-app form .data-val::after {
+  right: 20px;
 }
 html[dir=ltr] .bread-crumb ul li a::after {
   right: -28px;
@@ -1590,6 +1675,19 @@ html[dir=rtl] .select-in::after {
 }
 html[dir=rtl] .fix-icon-Input {
   right: 13px;
+}
+html[dir=rtl] .form-job-app {
+  right: 0;
+}
+html[dir=rtl] .form-job-app form .data-val input[type=date]::-webkit-calendar-picker-indicator {
+  left: 20px;
+}
+html[dir=rtl] .form-job-app form .data-val input[type=date] {
+  -moz-text-align-last: right;
+       text-align-last: right;
+}
+html[dir=rtl] .form-job-app form .data-val::after {
+  left: 20px;
 }
 html[dir=rtl] .bread-crumb ul li a::after {
   left: -28px;

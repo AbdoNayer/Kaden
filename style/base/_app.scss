@@ -691,7 +691,7 @@
 // Section Recruitment
 .section-recruitment{
   .box-recruitment{
-    background-color: #2e2e2e;
+    background-color: $opSecondColor;
     img{
       height: 300px;
       width: 80%;
@@ -737,3 +737,71 @@
     }
   }
 }
+
+// Form Job Application
+.form-job-app{
+  @include positionItem(fixed, 0, initial, initial, initial, initial);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+  contain: size style layout;
+  z-index: 999;
+  form{
+    .input-val, .select-in{
+      opacity: 50%;
+    }
+    .data-val{
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+        opacity: 0;
+        z-index: 9;
+      }
+      &::after{
+        content:"\e901";
+        font-family:"icomoon";
+        @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+// Select Option
+.select-in{
+  &::after{
+      content:"\e90d";
+      font-family:"icomoon";
+      @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+      color: $mainColor;
+  }
+  .form-select {
+      border: 1px solid $mainColor;
+      color: $mainColor;
+      background-color:transparent;
+      padding: 0 20px;
+      height: 55px;
+      border-radius: 5px;
+      &:focus {
+          border-color: #ced4da;
+          outline: 0;
+          box-shadow: 0 0 0 0 rgba(13,110,253,.25);
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
