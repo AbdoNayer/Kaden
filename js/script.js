@@ -30,6 +30,12 @@ $(document).ready(function () {
         $("body").toggleClass("overflow-hidden");
     });
 
+    // Click Open form Job App
+    $(document).on("click", ".open-form-job-app",function() {
+        $(".form-job-app").toggleClass("back");
+        $(".overlay-fixed").toggleClass("back");
+    });
+
     // Scroll Fix Header
     $(window).scroll(function () {
 
@@ -137,6 +143,56 @@ $(document).ready(function () {
             },
             1000:{
                 items:1
+            }
+        }
+    });
+
+    // Slider Project
+    $('.sliderProject').owlCarousel({
+        loop:true,
+        margin:10,
+        center:true,
+        autoplay:true,
+        pagination : false,
+        nav:true,
+        navText: [
+            '<i class="icon-chevron-left"></i>',
+            '<i class="icon-chevron-right"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
+    // Slider Project
+    $('.sliderProjectDetails').owlCarousel({
+        loop:true,
+        margin:10,
+        center:true,
+        autoplay:true,
+        pagination : false,
+        nav:true,
+        navText: [
+            '<i class="icon-arr-l"></i>',
+            '<i class="icon-arr-r"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
+                items:2
+            },
+            1000:{
+                items:3
             }
         }
     });

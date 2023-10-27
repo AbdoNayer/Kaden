@@ -66,7 +66,7 @@
   }
 }
 
-// 
+// Icon Title
 .icon-title{
   background-color: #675B44;
   width: 75px;
@@ -143,10 +143,11 @@
 // Up;oad File
 .custom-file-upload {
   border: 1px solid $mainColor;
-  padding: 13px 20px;
-  border-radius: 10px;
-  background-color:rgba(255,255,255,0.2);
   color: $whiteColor;
+  background-color:transparent;
+  padding: 0 20px;
+  height: 55px;
+  border-radius: 5px;
 }
 
 // Fix Btn Top
@@ -557,19 +558,6 @@
       background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100px);
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$blackColor, endColorstr=$blackColor,GradientType=0);
-      .mx-txt{
-        max-width: 700px;
-        .position-relative{
-          z-index: 9;
-        }
-        &::after{
-          content: "";
-          @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
-          width: 80px;
-          height: 100%;
-          background-color: $mainColor;
-        }
-      }
     }
     .owl-nav {
       @include positionItem(absolute, 50%, initial, 0, initial, translateY(-50%));
@@ -604,6 +592,20 @@
           }
       }
     }
+  }
+}
+
+.mx-txt{
+  max-width: 700px;
+  .position-relative{
+    z-index: 9;
+  }
+  &::after{
+    content: "";
+    @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+    width: 80px;
+    height: 100%;
+    background-color: $mainColor;
   }
 }
 
@@ -741,28 +743,30 @@
 // Form Job Application
 .form-job-app{
   @include positionItem(fixed, 0, initial, initial, initial, initial);
+  @include transition(0.5s);
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   will-change: scroll-position;
   contain: size style layout;
   z-index: 999;
-  form{
-    .input-val, .select-in{
-      opacity: 50%;
+}
+
+.form-job{
+  .input-val, .select-in, textarea, .custom-file-upload{
+    opacity: 50%;
+  }
+  .data-val{
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+      opacity: 0;
+      z-index: 9;
     }
-    .data-val{
-      input[type="date"]::-webkit-calendar-picker-indicator {
-        @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
-        opacity: 0;
-        z-index: 9;
-      }
-      &::after{
-        content:"\e901";
-        font-family:"icomoon";
-        @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
-        color: $mainColor;
-      }
+    &::after{
+      content:"\e901";
+      font-family:"icomoon";
+      @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+      color: $mainColor;
     }
   }
 }
@@ -787,6 +791,166 @@
           outline: 0;
           box-shadow: 0 0 0 0 rgba(13,110,253,.25);
       }
+  }
+}
+
+// Result Search
+.result-search{
+  form{
+    input{
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+// Body Project
+.body-project{
+  .head-project{
+    .head-about-us{
+      .head-about{
+        > img{
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+        .overlay-fix{
+          .container{
+            top: -100px;
+            &::after{
+              content: "";
+              @include positionItem(absolute, -100px, initial, -50px, initial, initial);
+              height: 450px;
+              width: 70%;
+              background-color: $secondColor
+            }
+            > img{
+              @include positionItem(absolute, -200px, initial, initial, 300px, initial);
+              z-index: 9;
+            }
+            .over-info{
+              z-index: 9;
+            }
+          }
+        }
+      }
+    }
+  }
+  .all-project{
+    top: -100px;
+    .icon-title{
+      background-color: rgb(213, 185, 120, 0.3);
+    }
+    .container{
+      &::after{
+        content: "";
+        @include positionItem(absolute, 0px, initial, -50px, initial, initial);
+        height: 115%;
+        width: 70%;
+        background-color: $secondColor;
+        z-index: -1;
+      }
+      .head-about-us{
+        .head-about{
+          > img{
+            height: 700px;
+          }
+        }
+      }
+      .sliderProject{
+        img{
+          height: 78px;
+          border: 1px solid #5A5A5A;
+        }
+        .owl-dots{
+          display: none
+        }
+        .owl-nav {
+          button{
+            position: relative;
+            background-color: $mainColor;
+            height: 100%;
+            @include positionItem(absolute, 50%, initial, initial, initial, translateY(-50%));
+            width: 40px;
+            &.owl-prev{
+                left: 0px;
+            }
+            &.owl-next{
+                right: 0px;
+            }
+            i{
+              color: $whiteColor;
+              font-size: 20px;
+            }
+          }
+        }
+        .owl-item.active.center{
+          img{
+            border: 1px solid $mainColor;
+          }  
+        }
+      }
+    }
+  }
+}
+
+// Block Section Project
+.block-section-project{
+  background-image: url('../../images/bg-opp.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  .over-down{
+    @include positionItem(absolute, initial, 0, 0, 0, initial);
+    background: #e5e5e5;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$blackColor, endColorstr=$blackColor,GradientType=0);
+  }
+  .slider-over-project{
+    .owl-dots{
+      display: none
+    }
+    .owl-nav {
+      @include positionItem(absolute, initial, -50px, 0, 0, initial);
+      display: flex !important;
+      align-items: center;
+      justify-content: space-between;
+      width: 115px;
+      button{
+        position: relative;
+        i{
+          color: $whiteColor;
+          font-size: 20px;
+        }
+      }
+    }
+    .owl-item{
+      .item{
+        transform: scale(0.8);
+        &::after{
+          content: "";
+          width: 100%;
+          height: 100%;
+          @include positionItem(absolute, initial, 0, 0, 0, initial);
+          background: #e5e5e5;
+          background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100%);
+          background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100px);
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.9) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$blackColor, endColorstr=$blackColor,GradientType=0);
+        }
+      }
+      img{
+        height: 500px;
+      }
+      &.active.center{
+        .item{
+          transform: scale(1.1);
+          &::after{
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 

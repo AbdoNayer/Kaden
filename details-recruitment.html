@@ -71,7 +71,7 @@
                             <li><a href="index.html" class="mx-3 text-white position-relative">الرئيسية</a></li>
                             <li><a href="about-us.html" class="mx-3 text-white position-relative">من نحن</a></li>
                             <li><a href="projects.html" class="mx-3 text-white position-relative">مشاريعنا</a></li>
-                            <li class="active"><a href="media-center.html" class="mx-3 text-white position-relative">المركز الاعلامي</a></li>
+                            <li><a href="media-center.html" class="mx-3 text-white position-relative">المركز الاعلامي</a></li>
                             <li><a href="teams.html" class="mx-3 text-white position-relative">فريقنا</a></li>
                             <li><a href="recruitment.html" class="mx-3 text-white position-relative">التوظيف</a></li>
                             <li><a href="call-us.html" class="mx-3 text-white position-relative">تواصل معنا</a></li>
@@ -233,7 +233,7 @@
 
                 </div>
 
-                <button class="btn-button w-50 bgColorMain m-auto d-table my-5 text-white fs-5">تقديم طلب</button>
+                <button class="btn-button w-50 bgColorMain m-auto d-table my-5 text-white fs-5 open-form-job-app">تقديم طلب</button>
 
 
             </div>
@@ -244,104 +244,129 @@
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between border-bottom p-4">
                     <h6 class="m-0 text-white">تعبئة طلب التقديم لوظيفة</h6>
-                    <button class="btn-icon-45 border borderRad-13"><i class="icon-arr-r text-white small-font-13"></i></button>
+                    <button class="btn-icon-45 border borderRad-13 open-form-job-app"><i class="icon-arr-r text-white small-font-13"></i></button>
                 </div>
 
-                <div class="p-4">
-                    <h6 class="text-white">الوظيفة المحدد</h6>
-                    <div class="block-item-work rounded-3 my-3 d-flex align-items-center">
-                        <div class="btn-icon-65 borderRad-13 bgColorMain d-flex align-items-center justify-content-center overflow-hidden">
-                            <img src="./images/bg-media.png" class="w-100 h-100" alt="">
-                        </div>
-                        <div class="px-3">
-                            <h6 class="text-white mt-0">جهة العمل</h6>
-                            <span class="text-white small-font-13">كادن</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form action="" class="px-4">
-
-                    <div class="row">
-                        <div class="col-md-6 col-xs-12">
-                            <div class="my-3">
-                                <label for="" class="text-white mb-2">الاسم بالكامل</label>
-                                <div class="position-relative input-val">
-                                    <i class="icon-user-b fix-icon-Input colorMain"></i>
-                                    <input type="text" class="input-icon w-100" placeholder="محمد الجربوع">
-                                </div>
+                <div class="w-75 m-auto">
+                    <div class="p-4">
+                        <h6 class="text-white">الوظيفة المحدد</h6>
+                        <div class="block-item-work rounded-3 my-3 d-flex align-items-center">
+                            <div class="btn-icon-65 borderRad-13 bgColorMain d-flex align-items-center justify-content-center overflow-hidden">
+                                <img src="./images/bg-media.png" class="w-100 h-100" alt="">
                             </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="my-3">
-                                <label for="" class="text-white mb-2">الرقم الوطني</label>
-                                <div class="position-relative input-val">
-                                    <i class="icon-user-b fix-icon-Input colorMain"></i>
-                                    <input type="text" class="input-icon w-100" placeholder="000000000000">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="my-3">
-                                <label for="" class="text-white mb-2">رقم الجوال</label>
-                                <div class="position-relative input-val">
-                                    <i class="icon-user-b fix-icon-Input colorMain"></i>
-                                    <input type="tel" class="input-icon w-100" placeholder="04565646546">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="my-3">
-                                <label for="" class="text-white mb-2">الجنس</label>
-                                <div class="position-relative select-in">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option value="">ذكر</option>
-                                        <option value="">أنثي</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="my-3">
-                                <label for="" class="text-white mb-2">تاريخ الميلاد</label>
-                                <div class="position-relative input-val data-val">
-                                    <input type="date" class="w-100" value="2013-01-08" placeholder="12-1-2023">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="my-3">
-                                <label for="" class="text-white mb-2">المؤهل العلمي</label>
-                                <div class="position-relative select-in">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option value="">بكالوريس</option>
-                                        <option value="">بكالوريس</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="my-3">
-                                <label for="" class="text-white mb-2">التخصص</label>
-                                <div class="position-relative input-val">
-                                    <input type="text" class="w-100" placeholder="انظمة معلومات">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="my-3">
-                                <label for="" class="text-white mb-2">المدينه</label>
-                                <div class="position-relative select-in">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option value="">الرياض</option>
-                                        <option value="">الرياض</option>
-                                    </select>
-                                </div>
+                            <div class="px-3">
+                                <h6 class="text-white mt-0">جهة العمل</h6>
+                                <span class="text-white small-font-13">كادن</span>
                             </div>
                         </div>
                     </div>
 
-                </form>
+                    <div class="form-job px-4">
+
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">الاسم بالكامل</label>
+                                    <div class="position-relative input-val">
+                                        <i class="icon-user-b fix-icon-Input colorMain"></i>
+                                        <input type="text" class="input-icon w-100" placeholder="محمد الجربوع">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">الرقم الوطني</label>
+                                    <div class="position-relative input-val">
+                                        <i class="icon-user-b fix-icon-Input colorMain"></i>
+                                        <input type="text" class="input-icon w-100" placeholder="000000000000">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">رقم الجوال</label>
+                                    <div class="position-relative input-val">
+                                        <i class="icon-user-b fix-icon-Input colorMain"></i>
+                                        <input type="tel" class="input-icon w-100" placeholder="04565646546">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">الجنس</label>
+                                    <div class="position-relative select-in">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="">ذكر</option>
+                                            <option value="">أنثي</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">تاريخ الميلاد</label>
+                                    <div class="position-relative input-val data-val">
+                                        <input type="date" class="w-100" value="2013-01-08" placeholder="12-1-2023">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">المؤهل العلمي</label>
+                                    <div class="position-relative select-in">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="">بكالوريس</option>
+                                            <option value="">بكالوريس</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">التخصص</label>
+                                    <div class="position-relative input-val">
+                                        <input type="text" class="w-100" placeholder="انظمة معلومات">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">المدينه</label>
+                                    <div class="position-relative select-in">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="">الرياض</option>
+                                            <option value="">الرياض</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">ارفق السيرة الذاتية</label>
+                                    <label for="file-upload" class="custom-file-upload w-100 d-flex align-items-center justify-content-between">
+                                        <span>لم تقم باختيار ملف</span>
+                                        <a class="p-1 rounded-3 text-white px-3 bgColorMain">
+                                            <span>رفع ملف</span>
+                                        </a>
+                                    </label>
+                                    <input id="file-upload" name='upload_cont_img' type="file" style="display:none;">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-12">
+                                <div class="my-3">
+                                    <label for="" class="text-white mb-2">رسالة</label>
+                                    <textarea name="" placeholder="اكتب رسالتك" class="w-100"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-12">
+                                <div class="my-5">
+                                    <button class="btn-button w-100 text-white bgColorMain rounded-3 fs-5 open-form-job-app" data-bs-toggle="modal" data-bs-target="#exampleModal">تقديم طلب</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -349,12 +374,34 @@
     </div>
 
 
+    <!-- Vertically centered modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bgOpSecondColor">
+            <div class="modal-body">
+                <div class="text-center p-4">
+                    <span class="btn-icon-big bgOpSecColor rounded-circle d-flex align-items-center justify-content-center m-auto">
+                        <img src="./images/modal.png" alt="">
+                    </span>
+                    <p class="text-white my-4">لقد تم التقديم للوظيفة بنجاح</p>
+                    <p class="text-white my-4">نشكرك للتقديم هذه الوظيفة سنواصل معك قريبا</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <button class="btn-button bgColorMain text-white rounded-3 d-flex align-items-center justify-content-center fs-6 mx-2" data-bs-dismiss="modal">
+                            اغلاق
+                        </button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="pt-5 position-relative">
         <div class="overlay-absolute"></div>
         <div class="container position-relative py-5">
             <div class="form-email text-center" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">
-                <h4 class="text-white">ابق على اتصال</h4>
+                <h4 class="colorMain title-sec position-relative mt-0">ابق على اتصال</h4>
                 <p class="text-white my-4">تابع قنواتنا الاجتماعية واشترك في النشرة الإخبارية للحصول على آخر التحديثات.</p>
                 <form action="" class="d-flex align-items-center justify-content-center flex-col py-3">
                     <div class="input-val position-relative">
