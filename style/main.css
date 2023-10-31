@@ -13,141 +13,50 @@
   flex-wrap: initial;
   z-index: 99999;
 }
-.loader::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: initial;
-  right: 0;
-  left: initial;
-  transform: var(--backRightIn);
-  margin: auto;
-  transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  background: #FFF;
-  width: 50%;
-  height: 100%;
-}
-.loader::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: initial;
-  right: initial;
-  left: 0;
-  transform: var(--backLefttIn);
-  margin: auto;
-  transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  background: #FFF;
-  width: 50%;
-  height: 100%;
-}
-.loader .spinner {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  transform: initial;
-  margin: auto;
-  width: 60px;
-  height: 60px;
-  z-index: 9;
-}
-.loader .spinner .item {
-  width: 30px;
-  height: 30px;
+.loader .loader-circle {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  position: absolute;
+  background-color: #FFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 1.5s ease-in-out infinite;
 }
-.loader .spinner .item.item-1 {
-  background-color: #D5B978;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  animation: item-1_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
-}
-.loader .spinner .item.item-2 {
-  background-color: #0f0f10;
-  top: 0;
-  right: 0;
-  animation: item-2_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
-}
-.loader .spinner .item.item-3 {
-  background-color: #ccc;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  animation: item-3_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
-}
-.loader .spinner .item.item-4 {
-  background-color: #DDD;
-  bottom: 0;
-  left: 0;
-  animation: item-4_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
-}
-@keyframes item-1_move {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(0, 30px);
-  }
-  50% {
-    transform: translate(30px, 30px);
-  }
-  75% {
-    transform: translate(30px, 0);
-  }
-}
-@keyframes item-2_move {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-30px, 0);
-  }
-  50% {
-    transform: translate(-30px, 30px);
-  }
-  75% {
-    transform: translate(0, 30px);
-  }
-}
-@keyframes item-3_move {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(0, -30px);
-  }
-  50% {
-    transform: translate(-30px, -30px);
-  }
-  75% {
-    transform: translate(-30px, 0);
-  }
-}
-@keyframes item-4_move {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(30px, 0);
-  }
-  50% {
-    transform: translate(30px, -30px);
-  }
-  75% {
-    transform: translate(0, -30px);
-  }
+.loader .loader-circle:before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 8px solid #D5B978;
+  border-color: #D5B978 transparent #D5B978 transparent;
+  animation: loader 1.2s linear infinite;
 }
 
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
 .header {
   position: fixed;
   top: 0;
@@ -1490,6 +1399,17 @@ button {
   transform: initial;
   margin: auto;
   z-index: 9;
+}
+.all-teams .up-bos {
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  border: 1px solid transparent;
+}
+.all-teams .up-bos:hover {
+  background-color: #2e2e2e;
+  border: 1px solid #D5B978;
 }
 .all-teams .up-bos .bos-img {
   background-color: rgba(77, 77, 79, 0.5);

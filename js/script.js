@@ -3,7 +3,7 @@
 $(window).on('load', function () {
 
     // Loading Page
-    $(".spinner").delay(500).fadeOut(400, function() {
+    $(".loader-circle").delay(500).fadeOut(400, function() {
         document.documentElement.style.setProperty('--backRightIn', 'translateX(100%)')
         document.documentElement.style.setProperty('--backLefttIn', 'translateX(-100%)')
         $(".loader").fadeOut(1500);

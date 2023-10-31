@@ -731,6 +731,12 @@
       z-index: 9;
   }
   .up-bos{
+    @include transition(0.5s);
+    border: 1px solid transparent;
+    &:hover{
+      background-color: $opSecondColor;
+      border: 1px solid $mainColor;
+    }
     .bos-img{
       background-color: rgba(77, 77, 79, 0.5);
       img{
