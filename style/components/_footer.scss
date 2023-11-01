@@ -3,7 +3,7 @@
 
 // Style Footer In Web
 footer{
-    background-image: url('../../images/p3.png');
+    background-image: url('/images/p3.png');
     background-repeat: no-repeat;
     background-size: cover;
     .logo-footer{
@@ -64,7 +64,7 @@ footer{
 // Style Footer In Mobile
 @media (max-width: 1200px) {
     footer{
-        background-image: url('../../images/p3.png');
+        background-image: url('/images/p3.png');
         background-repeat: no-repeat;
         background-size: cover;
         .logo-footer{

@@ -200,7 +200,7 @@
   }
 }
 footer {
-  background-image: url("../../images/p3.png");
+  background-image: url("/images/p3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -248,7 +248,7 @@ footer .end-footer .container .link-social ul li.whatsapp:hover a {
 
 @media (max-width: 1200px) {
   footer {
-    background-image: url("../../images/p3.png");
+    background-image: url("/images/p3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -927,7 +927,7 @@ button {
 }
 
 .news {
-  background-image: url("../../images/bg-news.png");
+  background-image: url("/images/bg-news.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
