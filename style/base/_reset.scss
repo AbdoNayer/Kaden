@@ -1,17 +1,18 @@
-// Font Import
-@font-face {
-    font-family: "JALI";
-    src: url("../../fonts/regular.ttf");
-}
-@font-face {
-    font-family: "JALI";
-    src: url("../../fonts/semiBold.ttf");
-    font-weight: bold;
-}
-
 // Mixin
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
+
+
+// Font Import
+@font-face {
+    font-family: "JALI";
+    src: url("/fonts/regular.ttf");
+}
+@font-face {
+    font-family: "JALI";
+    src: url("/fonts/semiBold.ttf");
+    font-weight: bold;
+}
 
 // Local Style Page
 * {

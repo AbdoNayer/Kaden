@@ -281,11 +281,11 @@ footer .end-footer .container .link-social ul li.whatsapp:hover a {
 }
 @font-face {
   font-family: "JALI";
-  src: url("../../fonts/regular.ttf");
+  src: url("/fonts/regular.ttf");
 }
 @font-face {
   font-family: "JALI";
-  src: url("../../fonts/semiBold.ttf");
+  src: url("/fonts/semiBold.ttf");
   font-weight: bold;
 }
 * {
