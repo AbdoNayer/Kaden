@@ -200,7 +200,7 @@
   }
 }
 footer {
-  background-image: url("/images/p3.png");
+  background-image: url("../images/p3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -246,46 +246,13 @@ footer .end-footer .container .link-social ul li.whatsapp:hover a {
   background-color: #25D366;
 }
 
-@media (max-width: 1200px) {
-  footer {
-    background-image: url("/images/p3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  footer .logo-footer img {
-    max-width: 150px;
-  }
-  footer .form-email form .input-val {
-    opacity: 40%;
-  }
-  footer .form-email form .input-val input {
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  footer .links-footer ul li a {
-    opacity: 40%;
-  }
-  footer .links-footer ul li a:hover {
-    opacity: 100%;
-  }
-  footer .end-footer {
-    border-top: 1px solid #2b2b2b;
-    padding: 0 !important;
-  }
-  footer .end-footer .py-5 {
-    padding: 30px 0 !important;
-  }
-  footer .end-footer p {
-    margin: 0 !important;
-  }
+@font-face {
+  font-family: "JALI";
+  src: url("../fonts/regular.ttf");
 }
 @font-face {
   font-family: "JALI";
-  src: url("/fonts/regular.ttf");
-}
-@font-face {
-  font-family: "JALI";
-  src: url("/fonts/semiBold.ttf");
+  src: url("../fonts/semiBold.ttf");
   font-weight: bold;
 }
 * {
@@ -927,7 +894,7 @@ button {
 }
 
 .news {
-  background-image: url("/images/bg-news.png");
+  background-image: url("../images/bg-news.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

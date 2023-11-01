@@ -3,7 +3,7 @@
 
 // Style Footer In Web
 footer{
-    background-image: url('/images/p3.png');
+    background-image: url('../images/p3.png');
     background-repeat: no-repeat;
     background-size: cover;
     .logo-footer{
@@ -59,52 +59,4 @@ footer{
             }
         }
     }
-}
-
-// Style Footer In Mobile
-@media (max-width: 1200px) {
-    footer{
-        background-image: url('/images/p3.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        .logo-footer{
-            img{
-                max-width: 150px;
-            }
-        }
-        .form-email{
-            form{
-                .input-val{
-                    opacity: 40%;
-                    input{
-                        width: 350px;
-                        background-color: rgba(255,255,255,0.2);
-                    }
-                }
-            }
-        }
-        .links-footer{
-            ul{
-                li{
-                    a{
-                        opacity: 40%;
-                        &:hover{
-                            opacity: 100%;
-                        }
-                    }
-                }
-            }
-        }
-        .end-footer{
-            border-top: 1px solid #2b2b2b;
-            padding: 0 !important;
-            .py-5{
-                padding: 30px 0 !important;
-            }
-            p{
-                margin: 0 !important;
-            }
-        }
-    }
-
 }
