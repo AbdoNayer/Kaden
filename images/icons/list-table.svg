@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="path2043" d="M0-682.665H22v22H0Z" transform="translate(0 682.665)"/>
+    </clipPath>
+  </defs>
+  <g id="g2037" transform="translate(0 682.665)">
+    <g id="g2039" transform="translate(0 -682.665)">
+      <g id="g2041" clip-path="url(#clip-path)">
+        <g id="g2047" transform="translate(0.688 11.043)">
+          <path id="path2049" d="M-309.687-154.843a5.156,5.156,0,0,1-5.156,5.156A5.156,5.156,0,0,1-320-154.843,5.156,5.156,0,0,1-314.843-160,5.156,5.156,0,0,1-309.687-154.843Z" transform="translate(319.999 160)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g2051" transform="translate(5.844 0.645)">
+          <path id="path2053" d="M0-621.954H14.18a1.289,1.289,0,0,0,1.289-1.289v-15.125l-4.3-4.3H1.289A1.289,1.289,0,0,0,0-641.376v9.109" transform="translate(0 642.665)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g2055" transform="translate(17.016 0.645)">
+          <path id="path2057" d="M0,0V4.3H4.3Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g2059" transform="translate(9.254 12.332)">
+          <path id="path2061" d="M0,0H9.051" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g2063" transform="translate(8.852 8.465)">
+          <path id="path2065" d="M0,0H9.453" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g2067" transform="translate(11 16.199)">
+          <path id="path2069" d="M0,0H7.3" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g2071" transform="translate(5.844 13.621)">
+          <path id="path2073" d="M0-77.422V-80" transform="translate(0 80)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g id="g2075" transform="translate(5.844 16.199)">
+          <path id="path2077" d="M0,0H1.719" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
