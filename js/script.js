@@ -10,9 +10,6 @@ $(window).on('load', function () {
     });
     $("body").css("overflow-y", "auto");
 
-    // Animation Page
-    AOS.init();
-
 });
 
 $(document).ready(function () {
@@ -196,6 +193,9 @@ $(document).ready(function () {
             }
         }
     });
+
+    // Animation Page
+    AOS.init();
     
 });
 
